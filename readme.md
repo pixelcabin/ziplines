@@ -1,4 +1,4 @@
-![Header Graphic](http://ziplines.pixelcab.in/img/social_thumb-eba438a9.png)
+![Header Graphic](http://ziplines.pixelcab.in/img/social_thumb2-cd85f0ce.png)
 
 # Ziplines
 

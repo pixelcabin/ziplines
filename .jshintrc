@@ -1,0 +1,14 @@
+{
+  "curly": true,
+  "eqnull": true,
+  "immed": true,
+  "indent": 2,
+  "noarg": true,
+  "quotmark": "single",
+  "smarttabs": true,
+  "trailing": true,
+  "undef": true,
+  "unused": true,
+  "globals": { "$": true, "jQuery": true, "window": true, "document": true, "alert": true, "Shopify": true, "location": true, "Offline": true, "product_json": true },
+  "node": true
+}

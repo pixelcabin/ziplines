@@ -1,0 +1,47 @@
+{
+  "name": "ziplines",
+  "version": "0.1.1",
+  "description": "Ziplines is a quick command line tool to help you get set up with an integrated Shopify workflow that supports a stable multi-developer workflow, VCS, the full feature-set of SASS, JS hinting and compression, and much more!",
+  "author": "Pixelcabin",
+  "main": "lib/index.js",
+  "bin": {
+    "ziplines": "./bin/cli.js",
+    "pxlcat": "./bin/cli.js"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "bower": "^1.3.12",
+    "colors": "^1.0.3",
+    "exec": "^0.1.2",
+    "glob": "~3.2.3",
+    "growl": "~1.7.0",
+    "inquirer": "^0.8.2",
+    "is-root": "^1.0.0",
+    "nopt": "^3.0.1",
+    "npm": "^2.1.12",
+    "open": "0.0.5",
+    "rimraf": "^2.2.8",
+    "semver": "^4.3.0",
+    "shopify-api": "^0.2.3",
+    "simple-git": "~1.2.0",
+    "string-length": "^1.0.0",
+    "update-notifier": "^0.2.2",
+    "which": "^1.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixelcabin/ziplines"
+  },
+  "bugs": {
+    "url": "https://github.com/pixelcabin/ziplines/issues"
+  },
+  "scripts": {
+    "postinstall": "node lib/welcome.js",
+    "test": "node bin/cli.js new test --debug"
+  },
+  "preferGlobal": true,
+  "engines": {
+    "node": ">=0.10.33"
+  },
+  "license": "MIT"
+}

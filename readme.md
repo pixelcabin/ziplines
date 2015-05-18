@@ -67,7 +67,7 @@ ziplines -v
 
 The primary goal of this tool was to streamline the process of getting set up with the tooling we have found useful. In summary, this does the following:
 
-1. Clones a publicly available repo into a new folder - this defaults to [pixelcabin/pxl_shopify_template_public_draft](https://github.com/pixelcabin/pxl_shopify_template_public_draft)
+1. Clones a publicly available repo into a new folder - this defaults to [pixelcabin/ziplines_blank_template](https://github.com/pixelcabin/ziplines_blank_template)
 1. Creates a new theme on the store, telling Shopify to use the zip of the master branch of the repo cloned in step 1.
 1. Sets up the the relevant config to ensure that subsequent Grunt tasks are pointing to the correct store, with the newly created `theme_id`, and API credentials
 1. Installs the dependencies specified in the cloned repo's `packages.json`
@@ -119,7 +119,7 @@ The folder structure in a newly created project will look familiar, but has a fe
 
 ```
 
-The main driver of day-to-day development, `grunt watch`, will do the following ([view in the Gruntfile](https://github.com/pixelcabin/pxl_shopify_template_public_draft/blob/master/Gruntfile.js#L148)):
+The main driver of day-to-day development, `grunt watch`, will do the following ([view in the Gruntfile](https://github.com/pixelcabin/ziplines_blank_template/blob/master/Gruntfile.js#L148)):
 * monitor the contents of `src\js\app`, and compile (and compress) all .js files within to `shop\assets\application.js`
 * monitor the contents of `src\js\third_party`, and compile (and compress) all .js files within to `shop\assets\third_lib.js`
 * monitor the contents of `src\scss`, and compile (and compress) `application.scss` to `shop\assets\application.css` 

@@ -1,6 +1,6 @@
 ![Header Graphic](http://ziplines.pixelcab.in/img/social_thumb2-cd85f0ce.png)
 
-# Ziplines
+# Ziplines (beta)
 
 > Ziplines is a quick command line tool to help you get set up with an integrated Shopify workflow that supports a stable multi-developer workflow, VCS, the full feature-set of SASS, JS hinting and compression, and much more! 
 

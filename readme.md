@@ -149,17 +149,24 @@ Downloads and installs a new Ziplines project, into a folder named after the sto
 ziplines new <store-name> <api_key> <api_password>
 ```
 
-You can include Foundation with the `--foundation` flag.
+##### Optional flags:
+
+You can include Zurb's [Foundation](http://foundation.zurb.com/) with the `--foundation` flag.
 
 ```bash
 ziplines new <store-name> <api_key> <api_password> --foundation
+```
+
+You can include [Timber](https://shopify.github.io/Timber/) with the `--timber` flag.
+
+```bash
+ziplines new <store-name> <api_key> <api_password> --timber
 ```
 
 You can also provide the path to a public github repo as the fourth argument (in the format `username/reponame`), providing you the flexibility to build your own template into this workflow:
 
 ```bash
 ziplines new <store-name> <api_key> <api_password> pixelcabin/blank_ziplines_template
-
 ```
 
 > If any arguments are missing, `new` will take you through an interactive prompt

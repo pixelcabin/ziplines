@@ -149,6 +149,8 @@ Downloads and installs a new Ziplines project, into a folder named after the sto
 ziplines new <store-name> <api_key> <api_password>
 ```
 
+> If you have issues with this command, try running as root.
+
 ##### Optional flags:
 
 You can include Zurb's [Foundation](http://foundation.zurb.com/) with the `--foundation` flag.

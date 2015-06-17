@@ -34,7 +34,7 @@ This will add the `ziplines` command to your system.
 
 ## Setup Instructions
 #### New Store
-1. Setup the store on Shopify (shortcut for Partners: `ziplines store_setup new`)
+1. Setup the store on Shopify (shortcut for Partners: `ziplines store_setup new_store`)
 1. Setup a private app on your store (shortcut: `ziplines store_setup app --store=STORENAME`), and take note of the api key and api password
 1. `ziplines new STORENAME APIKEY APIPASSWORD`(see the [new](https://github.com/pixelcabin/ziplines#new) docs for optional flags)
 

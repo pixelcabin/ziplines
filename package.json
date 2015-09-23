@@ -1,6 +1,6 @@
 {
   "name": "ziplines",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Ziplines is a quick command line tool to help you get set up with an integrated Shopify workflow that supports a stable multi-developer workflow, VCS, the full feature-set of SASS, JS hinting and compression, and much more!",
   "author": "Pixelcabin",
   "main": "lib/index.js",

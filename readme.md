@@ -279,7 +279,7 @@ Ziplines sets up a new project with this direction in mind - it creates a new th
 
 ## Thanks
 **Ziplines** wouldn't have been possible without the awesome work on the following tools:
-* [foundation-cli](https://github.com/zurb/foundation-cli) - immensly useful in kickstarting development on building the CLI tool that became **Ziplines**
+* [foundation-cli](https://github.com/zurb/foundation-cli) - immensely useful in kickstarting development on building the CLI tool that became **Ziplines**
 * [grunt](http://gruntjs.com) - the core engine that drives the day-to-day automation
 * [grunt-shopify](https://github.com/wilr/grunt-shopify) - the grunt plugin that handles the uploading to Shopify 
 

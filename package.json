@@ -1,6 +1,6 @@
 {
   "name": "ziplines",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Ziplines is a quick command line tool to help you get set up with an integrated Shopify workflow that supports a stable multi-developer workflow, VCS, the full feature-set of SASS, JS hinting and compression, and much more!",
   "author": "Pixelcabin",
   "main": "lib/index.js",
@@ -28,15 +28,14 @@
     "update-notifier": "^0.2.2",
     "which": "^1.0.8",
 
-    "grunt": "~0.4.2",
+    "grunt": "~0.4.5",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-sass": "~0.7.0",
+    "grunt-contrib-sass": "~1.0.0",
     "grunt-contrib-concat": "~0.4.0",
     "grunt-contrib-jshint": "~0.6.3",
     "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-uglify": "~0.3.1",
-    "grunt-contrib-watch": "~0.6.0",
-    "grunt-pageres": "^1.1.0",
+    "grunt-contrib-uglify": "~0.10.0",
+    "grunt-contrib-watch": "~1.0.0",
     "grunt-shopify": "~0.5.0"
   },
   "repository": {

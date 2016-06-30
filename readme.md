@@ -205,6 +205,11 @@ i.e. If wanting to view the products admin page, run:
 ziplines admin products
 ```
 
+You can also jump straight to your configured theme's theme settings page, by append `customize` (or `c`) to `ziplines admin themes`:
+```bash
+ziplines admin themes customize
+```
+
 ### docs
 
 Opens the documentation for Ziplines (currently this page)

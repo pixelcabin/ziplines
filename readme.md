@@ -2,7 +2,7 @@
 
 # Ziplines (beta)
 
-> Ziplines is a quick command line tool to help you get set up with an integrated Shopify workflow that supports a stable multi-developer workflow, VCS, the full feature-set of SASS, JS hinting and compression, and much more! 
+> Ziplines is a quick command line tool to help you get set up with an integrated Shopify workflow that supports a stable multi-developer workflow, VCS, the full feature-set of SASS, JS hinting and compression, and much more!
 
 &nbsp;
 
@@ -72,7 +72,7 @@ The primary goal of this tool was to streamline the process of getting set up wi
 1. Sets up the the relevant config to ensure that subsequent Grunt tasks are pointing to the correct store, with the newly created `theme_id`, and API credentials
 1. Installs the dependencies specified in the cloned repo's `packages.json`
 1. Optionally installs Foundation
-1. Runs a one off asset compilation, and uploads that to the newly created theme
+1. Runs a one-off asset compilation, and uploads that to the newly created theme
 1. Initialises a new Git repository in the project folder, and commits all files as a first commit
 
 At this stage, your folder will be all set up to start development.
@@ -122,7 +122,7 @@ The folder structure in a newly created project will look familiar, but has a fe
 The main driver of day-to-day development, `grunt watch`, will do the following ([view in the Gruntfile](https://github.com/pixelcabin/ziplines_blank_template/blob/master/Gruntfile.js#L148)):
 * monitor the contents of `src\js\app`, and compile (and compress) all .js files within to `shop\assets\application.js`
 * monitor the contents of `src\js\third_party`, and compile (and compress) all .js files within to `shop\assets\third_lib.js`
-* monitor the contents of `src\scss`, and compile (and compress) `application.scss` to `shop\assets\application.css` 
+* monitor the contents of `src\scss`, and compile (and compress) `application.scss` to `shop\assets\application.css`
 * for both of the js tasks, `jshint` will be run before compilation (using the rules defined in `.jshint`), and block compilation if jshint fails
 * monitor the contents of `shop`, and will upload any changes to the configured theme (this will also trigger a call to livereload - if on Chrome, this can be used with [this extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?utm_source=chrome-app-launcher-info-dialog))
 
@@ -139,7 +139,7 @@ The main driver of day-to-day development, `grunt watch`, will do the following 
 * `store_setup`
 * `help`
 
-> NB: Where possible, **Ziplines** will attempt to identify the relevant store and theme in question, by looking at the contents of the Gruntfile and credentials.json. This means that if running commands such as `admin` from within the project folder, no store name needs to be provided. 
+> NB: Where possible, **Ziplines** will attempt to identify the relevant store and theme in question, by looking at the contents of the Gruntfile and credentials.json. This means that if running commands such as `admin` from within the project folder, no store name needs to be provided.
 
 ### new
 
@@ -222,7 +222,7 @@ ziplines env <environment>
 ```
 
 Available arguments: `development` (or `d`), and `production` (or `p`)
-    
+
 > Important: requires a restart of `grunt watch` after execution
 
 ### store_setup
@@ -235,7 +235,7 @@ ziplines store_setup <command>
 
 Available commands:
 * `new_store` - shortcut to the new dev store page _[only available if you have a partner account]_
-* `new_app [--store=STORE_NAME]` - shortcut to the new private app page 
+* `new_app [--store=STORE_NAME]` - shortcut to the new private app page
 * `show_apps [--store=STORE_NAME]` - shortcut to the private apps page
 
 Optional `--store` flag can be added if running outside of a configured project folder
@@ -258,13 +258,13 @@ ziplines help new
 
 ## Generic Workflow
 
-The workflow we have adopted is modeled off normal VCS-based software development, where each developer has a version of the code running locally on their machine, and then synchronises with the rest of the team via their VCS. However, with Shopify, there is no way to run a store locally, meaning that to run the code you have been working on, it must first be uploaded to Shopify.
+The workflow we have adopted is modeled on normal VCS-based software development, where each developer has a version of the code running locally on their machine, and then synchronises with the rest of the team via their VCS. However, with Shopify, there is no way to run a store locally, meaning that to run the code you have been working on, it must first be uploaded to Shopify.
 
 Our workflow is as follows:
 * Each developer has their own theme on Shopify, which Grunt is configured to upload to. Any changes they make are only pushed to that theme.
 * The local codebase is tracked through a VCS, meaning that a team can collaborate on it like any other development project
 
-Ziplines sets up a new project with this direction in mind - it creates a new theme on your store that Grunt will upload to, and initialises a new git repositiory. Crucially, `credentials.json`, which holds the config for both your API settings and the theme to push to, is excluded from the repo, ensuring that the theme_id setting doesn't sync to other developers, allowing each dev to have their own theme (it also stops the sensetive API credentials from being comitting to git).
+Ziplines sets up a new project with this direction in mind: it creates a new theme on your store that Grunt will upload to, and initialises a new git repositiory. Crucially, `credentials.json`, which holds the config for both your API settings and the theme to push to, is excluded from the repo, ensuring that the theme_id setting doesn't sync to other developers, allowing each dev to have their own theme (it also stops the sensitive API credentials being committed to git).
 
 > One of the great advantages of this approach is that the Shopify theme no longer becomes the authoritative record of the codebase, and instead becomes a temporary snapshot of what is stored in Git - this greatly reduces the fragility of the theme on Shopify, as you can always restore from Git if necessary.
 
@@ -286,7 +286,7 @@ Ziplines sets up a new project with this direction in mind - it creates a new th
 **Ziplines** wouldn't have been possible without the awesome work on the following tools:
 * [foundation-cli](https://github.com/zurb/foundation-cli) - immensely useful in kickstarting development on building the CLI tool that became **Ziplines**
 * [grunt](http://gruntjs.com) - the core engine that drives the day-to-day automation
-* [grunt-shopify](https://github.com/wilr/grunt-shopify) - the grunt plugin that handles the uploading to Shopify 
+* [grunt-shopify](https://github.com/wilr/grunt-shopify) - the grunt plugin that handles the uploading to Shopify
 
 <img src="http://ziplines.pixelcab.in/img/node-5583ff2b.png" width="24%">
 <img src="http://ziplines.pixelcab.in/img/grunt-logo-a9e0afcf.png" width="20%">
